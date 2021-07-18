@@ -2,6 +2,9 @@
   "name": "backend",
   "version": "1.0.0",
   "main": "index.js",
+  "engines": {
+    "node": ">=12"
+},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon src/app.js -e js,hbs",
@@ -11,7 +14,7 @@
   "author": "Bablu Kumar",
   "license": "ISC",
   "description": "",
-  
+
   "dependencies": {
     "aws-sdk": "^2.947.0",
     "bcrypt": "^5.0.1",
