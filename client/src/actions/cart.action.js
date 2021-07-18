@@ -8,7 +8,7 @@ const getCartItems = () => {
     try {
       dispatch({ type: cartConstants.ADD_TO_CART_REQUEST });
       console.log('i am getCartItems')
-      const res = await axios.post(`/user/getCartItems`);
+      const res = await axios.post(`${api}/user/getCartItems`);
       if (res.status === 200) {
         const { cartItems } = res.data;
         console.log({ getCartItems: cartItems });
@@ -61,7 +61,7 @@ export const addToCart = (product, newQty = 1) => {
         ],
       };
       console.log(payload);
-      const res = await axios.post(`user/cart/addtocart`, payload);
+      const res = await axios.post(`${api}/user/cart/addtocart`, payload);
       console.log(res);
       if (res.status === 201) {
         dispatch(getCartItems());
@@ -85,7 +85,7 @@ export const removeCartItem = (payload) => {
   return async (dispatch) => {
     try {
       dispatch({ type: cartConstants.REMOVE_CART_ITEM_REQUEST });
-      const res = await axios.post(`/user/cart/removeItem`, { payload });
+      const res = await axios.post(`${api}/user/cart/removeItem`, { payload });
       if (res.status === 202) {
         dispatch({ type: cartConstants.REMOVE_CART_ITEM_SUCCESS });
         dispatch(getCartItems());
@@ -124,7 +124,7 @@ export const updateCart = () => {
           }),
         };
         if (Object.keys(cartItems).length > 0) {
-          const res = await axios.post(`/user/cart/addtocart`, payload);
+          const res = await axios.post(`${api}/user/cart/addtocart`, payload);
           console.log(res, "res");
           if (res.status === 201) {
             dispatch(getCartItems());
