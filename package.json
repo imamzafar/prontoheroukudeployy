@@ -11,6 +11,7 @@
   "author": "Bablu Kumar",
   "license": "ISC",
   "description": "",
+  
   "dependencies": {
     "aws-sdk": "^2.947.0",
     "bcrypt": "^5.0.1",
