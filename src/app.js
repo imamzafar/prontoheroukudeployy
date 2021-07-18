@@ -4,6 +4,7 @@ const app = express();
 const hbs = require("hbs");
 const cors = require("cors");
 
+require('dotenv').config
 // const adminRoutes = require("./routes/admin/auth");
 
 const productRoutes = require("./routes/product.js");
@@ -95,12 +96,13 @@ app.use("/api/", categoryRoutes);
 
 app.use("/api/", authRoutes);
 
-app.use("/api", initialDataRoutes);
+app.use("/api/", initialDataRoutes);
 
 app.use("/api/", adminAuthRoutes);
 
 app.use("/api", cartRoutes);
 
+console.log(process.env.NODE_ENV )
 if (process.env.NODE_ENV === "production") {
   // Step 1:
   app.use(express.static(path.resolve(__dirname, "../client/build")));
