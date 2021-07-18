@@ -1,0 +1,15 @@
+@media (max-width: 768px) {
+    .row {
+        margin-left: unset;
+        margin-right: unset;
+    }
+    .t20bs-col {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 1000px) {
+    .t20bs-col {
+        padding-left: 0;
+    }
+}

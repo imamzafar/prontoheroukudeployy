@@ -1,0 +1,7 @@
+.productcatslider {
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: max-content;
+  height: unset;
+  overflow-x: hidden;
+}

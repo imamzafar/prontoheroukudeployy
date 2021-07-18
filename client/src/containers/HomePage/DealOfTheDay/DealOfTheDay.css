@@ -1,0 +1,29 @@
+.deal-of-the-day {
+  padding: 20px;
+  border: 1px solid #00a4ff;
+  margin-top: 1.5rem;
+}
+
+/* List Group */
+
+.dotd-list-group > .list-group-item {
+  border: unset;
+}
+
+.dotd-list-group > div > h4 {
+  color: #ff3300;
+}
+
+.dotd-list-group > div > h4 > span {
+  color: #999999;
+}
+
+.available {
+  color: #669900;
+}
+
+.secondary {
+  color: #999999;
+}
+
+/* List Group Ends */

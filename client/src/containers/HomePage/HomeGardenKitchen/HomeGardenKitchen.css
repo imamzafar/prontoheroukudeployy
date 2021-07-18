@@ -1,0 +1,26 @@
+.home-gar-kit-container {
+    background-color: #F5F5F5;
+}
+
+.home-gar-kit-container>.container {
+    border-radius: 1.5rem;
+}
+
+.home-gar-kit-card-img {
+    border-radius: 1.5rem 1.5rem 0 0!important;
+    padding: 20px;
+}
+
+.home-gar-kit-card-title>small {
+    color: #999999;
+}
+
+.home-gar-kit-card {
+    border-color: #000000;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.home-gar-kit-main-body {
+    position: absolute;
+}

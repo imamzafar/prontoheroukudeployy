@@ -1,0 +1,35 @@
+.product-carousel {
+  padding: 20px;
+}
+
+.product-carousel > .carousel-indicators li {
+  color: rgb(130, 245, 226);
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
+/* Figure */
+
+.pruduct-carousel-figure {
+  margin-bottom: 30px;
+  display: flex !important;
+}
+
+.product-carousel > .carousel-indicators .active {
+  background-color: #00a4ff;
+}
+
+.product-carousel > .carousel-indicators > li {
+  background-color: #dbdbdb;
+}
+
+.pruduct-carousel-figure > .figure-caption > h6:nth-child(1) {
+  color: #0066cc;
+}
+
+.pruduct-carousel-figure > .figure-caption > h6:nth-child(2) {
+  color: black;
+}
+
+/* Figure End */

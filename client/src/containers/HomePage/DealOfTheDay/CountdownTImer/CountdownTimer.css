@@ -1,0 +1,13 @@
+.countdown>div>div {
+    color: #FF0000;
+}
+
+.countdown>h3 {
+    margin-top: -23px;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.countdown>div>div>small, .countdown>h3 {
+    color: #666666;
+}

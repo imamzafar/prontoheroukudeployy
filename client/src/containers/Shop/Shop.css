@@ -1,0 +1,13 @@
+.smallerCard {
+  width: 10rem;
+}
+
+.topProductCard {
+  border-radius: 0 !important;
+  overflow: hidden;
+}
+.shopRow {
+  justify-content: center;
+  flex-wrap: unset;
+  margin: unset;
+}

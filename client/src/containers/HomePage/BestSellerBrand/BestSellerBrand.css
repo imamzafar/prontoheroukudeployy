@@ -1,0 +1,13 @@
+@media only screen and (max-width: 1000px) {}
+
+.best-seller-main-container>.container>img {
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+.best-seller-main-container>.container>.row:nth-child(2) {
+    border-radius: 1.5rem;
+    overflow: hidden;
+    margin-left: 0;
+    margin-right: 0;
+}

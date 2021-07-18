@@ -1,0 +1,9 @@
+.close-cartt:hover {
+    cursor: pointer;
+}
+
+.close-cartt {
+    color:rgb(255, 44, 44);
+    padding-left    : 1rem;
+    font-weight: 600;
+}

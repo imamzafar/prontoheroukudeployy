@@ -1,0 +1,26 @@
+.consumer-electronics-container {
+    background-color: #F5F5F5;
+}
+
+.consumer-electronics-container>.container {
+    border-radius: 1.5rem;
+}
+
+.consumer-electronics-card-img {
+    border-radius: 1.5rem 1.5rem 0 0!important;
+    padding: 20px;
+}
+
+.consumer-electronics-card-title>small {
+    color: #999999;
+}
+
+.consumer-electronics-card {
+    border-color: #000000;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.consumer-electronics-main-body {
+    position: absolute;
+}

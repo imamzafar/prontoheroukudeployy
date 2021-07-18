@@ -1,0 +1,13 @@
+.tcom-card {
+    margin-top: .25rem;
+    border: 1px solid rgb(0 0 0);
+}
+
+.tcom-card>.card-body {
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+.tcom-card>.card-img-top {
+    border-radius: inherit;
+}

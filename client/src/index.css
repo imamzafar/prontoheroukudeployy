@@ -1,0 +1,19 @@
+:root {
+  --slide-up-easing: cubic-bezier(0.41, 0.85, 0.55, 1.005);
+  --light-blue: #03afff;
+  --dark-blue: #1b1464;
+  --headings-size-h2: 2.25rem;
+  --background-gray: #f3f6f9;
+}
+
+body {
+  font-family: "Lato", sans-serif !important;
+}
+
+main {
+  min-height: 80vh;
+}
+
+.card {
+  border-radius: 1.5rem !important;
+}

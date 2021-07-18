@@ -1,0 +1,49 @@
+.toggle-signup:hover {
+  cursor: pointer;
+}
+
+.log-reg-toggle {
+  justify-content: space-evenly;
+}
+
+.login-button {
+  width: 100%;
+  color: rgb(0, 0, 0);
+  background-color: #00a4ff;
+  border: none;
+}
+
+.toggle-signup > h4 {
+  font-weight: bold;
+}
+
+.modal-content {
+  background-color: transparent;
+  border: unset;
+}
+
+.modal-bg {
+  background-color: #ffffff;
+  border-radius: 1.5rem;
+}
+
+.back-to-home > h5 {
+  cursor: pointer;
+  color: #000000;
+}
+
+.login-with-social > .col > i {
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.2rem;
+  color: #ffffff;
+}
+
+.login-with-social > .col > i:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .login-with-social > .col > i {
+    margin-bottom: 0.5rem;
+  }
+}
