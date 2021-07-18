@@ -15,7 +15,7 @@ const initialDataRoutes = require("./routes/admin/initialData");
 
 require("./db/conn");
 
-const Customer = require("./models/customerReg");
+// const Customer = require("./models/customerReg");
 
 const User = require("./models/user");
 
@@ -44,29 +44,29 @@ app.get("/register", (req, res) => {
   res.render("register.hbs");
 });
 
-app.post("/register", async (req, res) => {
-  try {
-    const pass = req.body.password;
-    const cpass = req.body.cpassword;
+// app.post("/register", async (req, res) => {
+//   try {
+//     const pass = req.body.password;
+//     const cpass = req.body.cpassword;
 
-    if (pass === cpass) {
-      const customerReg = new Customer({
-        fullname: req.body.fullName,
-        email: req.body.email,
-        age: req.body.age,
-        password: req.body.password,
-        cpassword: req.body.cpassword,
-      });
+//     if (pass === cpass) {
+//       const customerReg = new Customer({
+//         fullname: req.body.fullName,
+//         email: req.body.email,
+//         age: req.body.age,
+//         password: req.body.password,
+//         cpassword: req.body.cpassword,
+//       });
 
-      const cusReg = await customerReg.save();
-      res.status(200).render("login");
-    } else {
-      res.send("Passwords do not match");
-    }
-  } catch (err) {
-    res.status(404).send("Error occurred :" + err);
-  }
-});
+//       const cusReg = await customerReg.save();
+//       res.status(200).render("login");
+//     } else {
+//       res.send("Passwords do not match");
+//     }
+//   } catch (err) {
+//     res.status(404).send("Error occurred :" + err);
+//   }
+// });
 
 app.get("/login", (req, res) => {
   res.render("login.hbs");
