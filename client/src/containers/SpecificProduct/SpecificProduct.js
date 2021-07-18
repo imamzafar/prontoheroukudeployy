@@ -6,7 +6,7 @@ import { useParams } from "react-router-dom";
 import ProductCategorySlider from "../../component/ProductCategorySlider/ProductCategorySlider";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import {api} from '../urlConfig'
+import {api} from '../../urlConfig'
 
 const SpecificProduct = () => {
   const [productcat, setproductcat] = useState([]);
