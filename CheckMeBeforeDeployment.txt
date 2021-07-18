@@ -1,0 +1,2 @@
+things to do before deployment
+change urlconfig in frontend

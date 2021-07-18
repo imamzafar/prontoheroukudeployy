@@ -4,7 +4,7 @@ const app = express();
 const hbs = require("hbs");
 const cors = require("cors");
 
-require('dotenv').config
+require('dotenv').config()
 // const adminRoutes = require("./routes/admin/auth");
 
 const productRoutes = require("./routes/product.js");
