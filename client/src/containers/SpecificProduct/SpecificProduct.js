@@ -16,7 +16,7 @@ const SpecificProduct = () => {
   const getCategories = () => {
     console.log(productcategory, "productcategorys", "hi");
     axios
-      .get(`${api}/api/category/getcategory/${productcategory}`)
+      .get(`${api}/category/getcategory/${productcategory}`)
       .then((response) => {
         const procat = response.data.categoryList;
 
