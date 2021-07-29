@@ -13,10 +13,11 @@ import DownloadMartfuryApp from "./DownloadMartfuryApp/DownloadMartfuryApp";
 import QuoteList from "../QuoteList/QuoteList";
 import CallToAction from "../../component/CallToAction/CallToAction";
 import BrowseCatogary from "./BrowseCatogary/BrowseCatogary";
-import CarouselItemStory from "./CarouselItemStory/CarouselItemStory";
+// import CarouselItemStory from "./CarouselItemStory/CarouselItemStory";
 // import BannerImage from "./BannerImage/BannerImage";
 
 import "./HomePage.css";
+import Carousel2 from "../Carousel2/Carousel2";
 const HomePage = () => {
   
   return (
@@ -25,9 +26,11 @@ const HomePage = () => {
         <Services />
       </Container>
 
-      <CarouselItemStory
-      // style={{ marginTop: "30px", marginBottom: "300px" }}
-      />
+      {/* <CarouselItemStory
+      /> */}
+      <Container >
+        <Carousel2/>
+      </Container>
 
       <BrowseCatogary />
 
@@ -38,6 +41,7 @@ const HomePage = () => {
       <Container>
         <CallToAction />
       </Container>
+
 
       <DownloadMartfuryApp />
     </>

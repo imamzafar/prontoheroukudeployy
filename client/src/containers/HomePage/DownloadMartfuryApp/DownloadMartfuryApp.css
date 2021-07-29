@@ -4,3 +4,9 @@
 .downloads__content {
   top: 30px;
 }
+
+@media(max-width:640px){
+  .downloads__content {
+    width: auto
+  }
+}

@@ -1,3 +1,4 @@
+// cart is import
 import React, { useState } from "react";
 import ModalCart from "../../containers/Cart/Cart";
 import {

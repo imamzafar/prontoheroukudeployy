@@ -1,6 +1,7 @@
+// importing cart item
+// imported in Navbar2 as ModalCart
 import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import {Link} from 'react-router-dom'
 import {
   addToCart,
   getCartItems,

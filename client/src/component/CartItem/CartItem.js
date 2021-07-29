@@ -1,5 +1,5 @@
+// imported in Cart
 import React, {useState} from 'react'
-
 import './CartItem.css'
 
 const CartItem = (props) => {
@@ -34,7 +34,6 @@ const CartItem = (props) => {
                   <div className="row cartt">{name}</div>
                 </div>
                 <div className="cartt col">
-                  {" "}
                   <a  onClick={onQuantityDecrement} className="cartt">
                     -
                   </a>

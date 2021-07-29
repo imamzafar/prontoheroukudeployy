@@ -1,13 +1,14 @@
+// imported n homepage
 import React from "react";
 import { Carousel } from "react-bootstrap";
-import "./CarouselItemStory.css";
+// import "./CarouselItemStory.css";
 
 const CarouselItemStory = () => {
   return (
     <>
       {" "}
       <div style={{ marginTop: "4rem", marginBottom: "6rem" }}>
-        <Carousel interval={null} className="mb-5 mt-5">
+        <Carousel interval={null} className="mb-5 mt-5" fluid>
           <Carousel.Item>
             <div className="story__content">
               <h2 className="story__content__title">

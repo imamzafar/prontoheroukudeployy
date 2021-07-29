@@ -145,13 +145,13 @@ const Shop = () => {
         </Card>
       </Row>
       <Row className="shopRow">
-        <ProductCard
+        {/* <ProductCard
           zoom="no-zoom"
           // cardText="Snacks"
           src="https://60mm.imgeng.in/w_900/https://publicassets.gopuff.com/mixcart/tiles/referral/referral_no-dollar_ice-cream-hearts-v2_square_1020x1020.png"
-        />
+        /> */}
 
-        {product_category.slice(0, 3).map((el) => (
+        {product_category.slice(0, 4).map((el) => (
           <Link to={`/products/${el.title}`}>
             <ProductCard cardText={el.title} src={el.image} />
           </Link>

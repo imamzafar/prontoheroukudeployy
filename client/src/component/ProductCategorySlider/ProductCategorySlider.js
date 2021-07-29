@@ -5,7 +5,6 @@ import user1 from "../../img/user/user1.jpg";
 import ScrollContainer from "react-indiana-drag-scroll";
 import SingleProduct from "./SingleProduct/SingleProduct";
 import axios from "axios";
-import {api} from '../../urlConfig'
 
 // iske pass jo product ka naam aaya h vahi product ka list show krna h
 // abhi ke liye ek dummy product h products krna
@@ -27,7 +26,7 @@ class ProductCategorySlider extends React.Component {
 
   componentDidMount() {
     axios
-      .get(`${api}/product/cat/${this.props.productCatId}`)
+      .get(`http://localhost:5000/api/product/cat/${this.props.productCatId}`)
       .then((response) => this.setState({ products: response.data.products }));
 
     console.log(this.state.products);

@@ -11,7 +11,9 @@
   flex-direction: row;
 }
 .mainProductCard {
-  width: 18rem;
+  /* width: 18rem; */
+  flex-grow: 1;
+  max-width: 18rem;
   margin: 4px;
   border: 0 solid black;
   border-radius: 6px !important;

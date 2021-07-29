@@ -10,7 +10,7 @@ import Shop from "./containers/Shop/Shop";
 import SpecificProduct from "./containers/SpecificProduct/SpecificProduct";
 import UserLogin from "./component/Login/UserLogin";
 import Navbar2 from "./component/Navbar2/Navbar2";
-import Cart from './containers/Cart/Cart'
+// import Cart from './containers/Cart/Cart'
 import {  updateCart } from "./actions/cart.action";
 
 
@@ -59,7 +59,7 @@ const App = () => {
           component={SpecificProduct}
           exact
         />
-           <Route path="/cart" component={Cart} exact />
+           {/* <Route path="/cart" component={Cart} exact /> */}
       </main>
 
       <Footer />

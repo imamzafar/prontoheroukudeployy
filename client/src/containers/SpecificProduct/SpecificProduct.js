@@ -6,7 +6,6 @@ import { useParams } from "react-router-dom";
 import ProductCategorySlider from "../../component/ProductCategorySlider/ProductCategorySlider";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import {api} from '../../urlConfig'
 
 const SpecificProduct = () => {
   const [productcat, setproductcat] = useState([]);
@@ -16,7 +15,7 @@ const SpecificProduct = () => {
   const getCategories = () => {
     console.log(productcategory, "productcategorys", "hi");
     axios
-      .get(`${api}/category/getcategory/${productcategory}`)
+      .get(`http://localhost:5000/api/category/getcategory/${productcategory}`)
       .then((response) => {
         const procat = response.data.categoryList;
 
